@@ -6,7 +6,7 @@ from aiogram.utils.executor import start_webhook
 
 # ---------- НАСТРОЙКИ ----------
 # Берём токен из переменных окружения (это безопасно)
-BOT_TOKEN = os.environ.get('8695102951:AAFFfrLz8g5WA_N-ZHK9dmR4DuJZbR2KQlY')  # ЗАМЕНИТЕ НА СВОЙ ТОКЕН!
+BOT_TOKEN = os.environ.get('BOT_TOKEN', '8695102951:AAFFfrLz8g5WA_N-ZHK9dmR4DuJZbR2KQlY')  # ЗАМЕНИТЕ НА СВОЙ ТОКЕН!
 # Render автоматически подставляет внешний URL в переменную RENDER_EXTERNAL_URL
 WEBHOOK_HOST = os.environ.get('RENDER_EXTERNAL_URL', 'https://ваш-сервис.onrender.com')  # ЗАМЕНИТЕ ПОТОМ
 WEBHOOK_PATH = '/webhook'  # Путь, на который Telegram будет отправлять обновления
